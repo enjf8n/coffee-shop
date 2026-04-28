@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROSTERY — городская спешелти-кофейня</title>
+  <meta name="description" content="ROSTERY — городская спешелти-кофейня. Кофе, который меняет утро. Ручная обжарка, авторские напитки, атмосфера." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">
+        <span class="nav__logo-mark">R</span>
+        <span class="nav__logo-text">ROSTERY</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#story">История</a>
+        <a href="#menu">Меню</a>
+        <a href="#gallery">Атмосфера</a>
+        <a href="#visit">Найти нас</a>
+      </nav>
+      <a href="#visit" class="nav__cta">Заглянуть</a>
+      <button class="nav__burger" aria-label="Меню" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <span class="hero__pre">specialty · ручная обжарка · с 2019</span>
+      <h1 class="hero__title">
+        Кофе,<br />
+        который меняет<br />
+        <span class="hero__title-italic">ваше утро</span>
+      </h1>
+      <p class="hero__lead">
+        Микрообжарка зёрен с одноосновных ферм Эфиопии, Колумбии и Кении.<br />
+        Авторские напитки, неспешный ритуал, тёплый свет.
+      </p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">Посмотреть меню</a>
+        <a href="#story" class="btn btn--ghost">Наша история ↓</a>
+      </div>
+
+      <div class="hero__hand">
+        <span>с любовью к зерну,</span>
+        <em>команда ROSTERY</em>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span></span>
+      <small>scroll</small>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="story__container">
+      <div class="story__copy">
+        <span class="eyebrow">наша история</span>
+        <h2 class="h2">
+          Шесть лет<br />
+          поиска идеальной<br />
+          <em>чашки</em>.
+        </h2>
+        <p>
+          ROSTERY — это маленький ростер на углу, выросший из одной идеи: кофе должен рассказывать историю. Историю фермера, который собирал ягоды на 2 000 метров над уровнем моря. Историю обжарщика, ловившего first crack в нужный момент. Историю бариста, который в 7:42 утра подал именно вашу чашку.
+        </p>
+        <p>
+          Мы работаем с прямыми поставками, обжариваем небольшими партиями раз в неделю и никогда не продаём кофе старше 30 дней.
+        </p>
+        <div class="story__stats">
+          <div>
+            <strong>6+</strong>
+            <span>лет на сцене</span>
+          </div>
+          <div>
+            <strong>14</strong>
+            <span>сортов в ротации</span>
+          </div>
+          <div>
+            <strong>72ч</strong>
+            <span>от обжарки до пролива</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="story__media">
+        <div class="story__img story__img--1" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&q=80')"></div>
+        <div class="story__img story__img--2" style="background-image: url('https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=900&q=80')"></div>
+        <div class="story__quote">
+          <span class="story__quote-mark">“</span>
+          Хороший кофе — это <em>не вкус</em>, это <em>момент</em>.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="menu__head">
+      <span class="eyebrow">сигнатурное меню</span>
+      <h2 class="h2">Шесть напитков,<br /><em>которые стоит попробовать</em>.</h2>
+    </div>
+
+    <div class="menu__grid">
+      <article class="menu-card">
+        <div class="menu-card__num">01</div>
+        <h3>Эспрессо «Origin»</h3>
+        <p>Эфиопия Иргачеффе. Жасмин, бергамот, медовая сладость в послевкусии.</p>
+        <div class="menu-card__foot">
+          <span class="menu-card__price">220 ₽</span>
+          <span class="menu-card__tag">single origin</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card__num">02</div>
+        <h3>Капучино «Roastery»</h3>
+        <p>Бленд Бразилия + Колумбия. Тёмный шоколад, фундук, бархатная пенка.</p>
+        <div class="menu-card__foot">
+          <span class="menu-card__price">320 ₽</span>
+          <span class="menu-card__tag">classic</span>
+        </div>
+      </article>
+
+      <article class="menu-card menu-card--accent">
+        <div class="menu-card__num">03</div>
+        <h3>Раф «Карамельный лес»</h3>
+        <p>Авторский раф со сливками, карамелью пралине и копчёной солью. Зимний фаворит.</p>
+        <div class="menu-card__foot">
+          <span class="menu-card__price">390 ₽</span>
+          <span class="menu-card__tag">авторский</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card__num">04</div>
+        <h3>V60 Pour Over</h3>
+        <p>Кения Ньери AA. Чёрная смородина, томатная свежесть, винное послевкусие. 300 мл.</p>
+        <div class="menu-card__foot">
+          <span class="menu-card__price">350 ₽</span>
+          <span class="menu-card__tag">альтернатива</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card__num">05</div>
+        <h3>Флэт уайт «Утро»</h3>
+        <p>Двойной эспрессо, шёлковое молоко, сбалансированная горечь и шоколадное тело.</p>
+        <div class="menu-card__foot">
+          <span class="menu-card__price">300 ₽</span>
+          <span class="menu-card__tag">classic</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card__num">06</div>
+        <h3>Бамбл «Цитрус»</h3>
+        <p>Эспрессо, апельсиновый фреш, лёд. Освежающий контраст для тёплых дней.</p>
+        <div class="menu-card__foot">
+          <span class="menu-card__price">340 ₽</span>
+          <span class="menu-card__tag">сезон</span>
+        </div>
+      </article>
+    </div>
+
+    <p class="menu__note">
+      Полное меню — десятки позиций, авторские десерты от шефа, спецпредложение «кофе дня» каждое утро.
+    </p>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="gallery__head">
+      <span class="eyebrow">атмосфера</span>
+      <h2 class="h2">Уголок города,<br /><em>где время замедляется</em>.</h2>
+    </div>
+
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--tall" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=80')"></div>
+      <div class="gallery__item" style="background-image: url('https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=900&q=80')"></div>
+      <div class="gallery__item" style="background-image: url('https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=900&q=80')"></div>
+      <div class="gallery__item gallery__item--wide" style="background-image: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?w=1400&q=80')"></div>
+      <div class="gallery__item" style="background-image: url('https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=900&q=80')"></div>
+      <div class="gallery__item" style="background-image: url('https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=900&q=80')"></div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="visit__container">
+      <div class="visit__copy">
+        <span class="eyebrow">найти нас</span>
+        <h2 class="h2">
+          Заходите<br />
+          на чашку <em>тишины</em>.
+        </h2>
+
+        <div class="visit__info">
+          <div class="visit__row">
+            <span class="visit__label">адрес</span>
+            <span>ул. Кузнечная, 14<br />Санкт-Петербург</span>
+          </div>
+          <div class="visit__row">
+            <span class="visit__label">часы</span>
+            <span>пн–пт · 08:00 – 22:00<br />сб–вс · 09:00 – 23:00</span>
+          </div>
+          <div class="visit__row">
+            <span class="visit__label">контакт</span>
+            <span>+7 (812) 000-00-00<br />hello@rostery.coffee</span>
+          </div>
+        </div>
+
+        <div class="visit__social">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Telegram">Telegram</a>
+          <a href="#" aria-label="VK">VK</a>
+        </div>
+      </div>
+
+      <div class="visit__media">
+        <div class="visit__map" style="background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1400&q=80')">
+          <div class="visit__pin">
+            <span></span>
+            <small>ROSTERY</small>
+          </div>
+        </div>
+        <div class="visit__caption">
+          ближайшее метро — <em>Маяковская</em>, 4 минуты пешком
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__mark">R</span>
+        ROSTERY · городская спешелти-кофейня
+      </div>
+      <div class="footer__legal">
+        © 2019–2026 · Все права защищены · <a href="#">Политика приватности</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
